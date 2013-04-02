@@ -41,7 +41,7 @@ a:active{text-decoration:none;color:#FF6600;}
 .bg{background-color: #FFFFED;}
 .bg1{background-color: #FFF7DB;}
 .bg2{background: url(../images/public/bg.png);}
-.bg3{background: url(../images/public/bg-per.png);padding: 10px;width:680px;*width:700px;}
+.bg3{background: url(../images/public/bg-per.png);padding: 10px;}
 .bg4{background-color: #EFF0F1;}
 
 .head{background: url(../images/public/bg.png);border-bottom:1px solid #ccc;}
