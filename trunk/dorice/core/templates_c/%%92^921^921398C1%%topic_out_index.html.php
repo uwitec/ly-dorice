@@ -1,0 +1,224 @@
+<?php /* Smarty version 2.6.26, created on 2013-03-21 05:19:12
+         compiled from topic_out_index.html */ ?>
+<?php $_smarty_tpl_vars = $this->_tpl_vars;
+$this->_smarty_include(array('smarty_include_tpl_file' => "topic_header.html", 'smarty_include_vars' => array()));
+$this->_tpl_vars = $_smarty_tpl_vars;
+unset($_smarty_tpl_vars);
+ ?>
+<div class="nav">多爱食 > 外卖</div>
+<div class="public">
+    <div id="pub_le" class="bor">
+        <div class="recomend">
+            <h1>推荐餐厅</h1>
+            <div class="padding">
+                <ul>
+                    <li>
+                        <div class="re_img"><a href="#"><img src="templates/images/service/join1.jpg"/></a></div>
+                        <div class="re_all">
+                            <p><span class="style1">花木兰</span></p>
+                            <p>地址：朝阳区蓝色港湾国际商区3号楼</p>
+                        </div>
+                        <div class="clear"></div>
+                    </li>
+                    <li>
+                        <div class="re_img"><a href="#"><img src="templates/images/service/join1.jpg"/></a></div>
+                        <div class="re_all">
+                            <p><span class="style1">花木兰</span></p>
+                            <p>地址：朝阳区蓝色港湾国际商区3号楼</p>
+                        </div>
+                        <div class="clear"></div>
+                    </li>
+                    <li class="last">
+                        <div class="re_img"><a href="#"><img src="templates/images/service/join1.jpg"/></a></div>
+                        <div class="re_all">
+                            <p><span class="style1">花木兰</span></p>
+                            <p>地址：朝阳区蓝色港湾国际商区3号楼</p>
+                        </div>
+                        <div class="clear"></div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="recomend re_ad"><img src="templates/images/ad/ad2.jpg"/></div>
+        <div class="recomend">
+            <h1>最新外卖优惠</h1>
+            <div class="padding">
+                <ul>
+                    <li>
+                        <div class="re_img"><a href="#"><img src="templates/images/cate/food1.jpg"/></a></div>
+                        <div class="re_all">
+                            <p><小炒羊肉盖饭></p>
+                            <p>商家：无二世家</p>
+                            <p>优惠价：<span class="style3">￥12</span></p>
+                        </div>
+                        <div class="clear"></div>
+                    </li>
+                    <li>
+                        <div class="re_img"><a href="#"><img src="templates/images/cate/food1.jpg"/></a></div>
+                        <div class="re_all">
+                            <p><小炒羊肉盖饭></p>
+                            <p>商家：无二世家</p>
+                            <p>优惠价：<span class="style3">￥12</span></p>
+                        </div>
+                        <div class="clear"></div>
+                    </li>
+                    <li>
+                        <div class="re_img"><a href="#"><img src="templates/images/cate/food1.jpg"/></a></div>
+                        <div class="re_all">
+                            <p><小炒羊肉盖饭></p>
+                            <p>商家：无二世家</p>
+                            <p>优惠价：<span class="style3">￥12</span></p>
+                        </div>
+                        <div class="clear"></div>
+                    </li>
+                    <li class="last">
+                        <div class="re_img"><a href="#"><img src="templates/images/cate/food1.jpg"/></a></div>
+                        <div class="re_all">
+                            <p><小炒羊肉盖饭></p>
+                            <p>商家：无二世家</p>
+                            <p>优惠价：<span class="style3">￥12</span></p>
+                        </div>
+                        <div class="clear"></div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="recomend re_bor">
+            <h1>外卖排行</h1>
+            <div class="o_rank">
+                <ul>
+                    <li><b>1</b><span>无二世家</span><span class="total">344单</span></li>
+                    <li><b>2</b><span>仁和兴川味酒楼</span><span class="total">344单</span></li>
+                    <li><b>3</b><span>无二世家</span><span class="total">344单</span></li>
+                    <li><b>4</b><span>仁和兴川味酒楼</span><span class="total">344单</span></li>
+                    <li><b>5</b><span>无二世家</span><span class="total">344单</span></li>
+                    <li><b>6</b><span>仁和兴川味酒楼</span><span class="total">344单</span></li>
+                    <li><b>7</b><span>无二世家</span><span class="total">344单</span></li>
+                    <li><b>8</b><span>仁和兴川味酒楼</span><span class="total">344单</span></li>
+                    <li class="last"><b>9</b><span>无二世家</span><span class="total">344单</span></li>
+                </ul>
+            </div>            
+        </div>
+    </div>
+    <div id="pub_ri">
+        <div class="pub_ri bg2">
+            <h1>快速订外卖</h1>
+            <div class="out_fast">    
+                <ul>
+                    <li>餐厅<input type="text"/>美食<input type="text"/>份数<input type="text"/>+添加</li>
+                    <li><input type="button" value="提交订单" class="b1"/></li>
+                </ul>
+                <ul class="clear"></ul>
+            </div>
+        </div>
+        <div class="pub_ri">
+            <h1>你本地的热门餐厅</h1>
+            <div class="hot_left"></div>
+            <div class="hot_hall">
+                <ul>
+                    <li><img src="templates/images/service/join1.jpg"/><p>花木兰</p></li>
+                    <li><img src="templates/images/service/join1.jpg"/><p>仁和兴川味酒楼</p></li>
+                    <li><img src="templates/images/service/join1.jpg"/><p>无二世家</p></li>
+                </ul>
+            </div>
+            <div class="hot_right"></div>
+            <div class="clear"></div>
+        </div>
+        <div class="pub_ri">
+            <h1 class="more_all com_bg_2">你叫过的外卖<span>更多</span></h1>
+            <div class="outed">
+                <ul>
+                    <li><img src="templates/images/cate/food1.jpg"/></li>
+                    <li><img src="templates/images/cate/food1.jpg"/></li>
+                    <li><img src="templates/images/cate/food1.jpg"/></li>
+                    <li><img src="templates/images/cate/food1.jpg"/></li>
+                </ul>
+                <ul class="clear"></ul>
+            </div>
+        </div>
+        <div class="pub_ri">
+            <img src="templates/images/ad/ad5.jpg" style="width:700px;*width:698px;"/>
+        </div>
+        <div class="pub_ri">
+            <h1>你可能喜欢的餐厅</h1>
+            <div class="like_hall">
+                <ul>
+                    <li>
+                        <div class="like_hall_img"><a href="#"><img src="templates/images/service/join1.jpg"/></a></div>
+                        <div class="like_hall_all">
+                            <p class="style1">无二世家</p>
+                            <p>评分：4.7（34条评论）</p>
+                            <p>朝阳区惠忠北路慧忠里123</p>
+                        </div>
+                        <div class="clear"></div>
+                    </li>
+                    <li>
+                        <div class="like_hall_img"><a href="#"><img src="templates/images/service/join1.jpg"/></a></div>
+                        <div class="like_hall_all">
+                            <p class="style1">无二世家</p>
+                            <p>评分：4.7（34条评论）</p>
+                            <p>朝阳区惠忠北路慧忠里123</p>
+                        </div>
+                        <div class="clear"></div>
+                    </li> 
+                    <li class="last">
+                        <div class="like_hall_img"><a href="#"><img src="templates/images/service/join1.jpg"/></a></div>
+                        <div class="like_hall_all">
+                            <p class="style1">无二世家</p>
+                            <p>评分：4.7（34条评论）</p>
+                            <p>朝阳区惠忠北路慧忠里123</p>
+                        </div>
+                        <div class="clear"></div>
+                    </li>
+                    <li class="last">
+                        <div class="like_hall_img"><a href="#"><img src="templates/images/service/join1.jpg"/></a></div>
+                        <div class="like_hall_all">
+                            <p class="style1">无二世家</p>
+                            <p>评分：4.7（34条评论）</p>
+                            <p>朝阳区惠忠北路慧忠里123</p>
+                        </div>
+                        <div class="clear"></div>
+                    </li>
+                </ul>
+                <ul class="clear"></ul>
+            </div>
+        </div>
+        <div class="pub_ri bg">
+            <h1>你本地的热门美食</h1>
+            <div class="hot_left_cate"></div>
+            <div class="hot_cate">
+                <ul>
+                    <li><img src="templates/images/cate/food1.jpg"/><p>花木兰</p></li>
+                    <li><img src="templates/images/cate/food3.jpg"/><p>仁和兴川味酒楼</p></li>
+                    <li><img src="templates/images/cate/food1.jpg"/><p>无二世家</p></li>
+                    <li><img src="templates/images/cate/food1.jpg"/><p>无二世家</p></li>
+                </ul>
+            </div>
+            <div class="hot_right_cate"></div>
+            <div class="clear"></div>
+        </div>
+        <div class="pub_ri">
+            <h1>餐厅活动</h1>
+            <div class="hall_act">
+                <ul>
+                    <li>[仁和兴川味酒楼] 单次消费满50元，可享9折优惠</li>
+                    <li>[川湘馆] 单次消费满50元，送大可乐一瓶</li>
+                    <li>[仁和兴川味酒楼] 单次消费满50元，可享9折优惠</li>
+                    <li>[川湘馆] 单次消费满50元，送大可乐一瓶</li>
+                    <li>[仁和兴川味酒楼] 单次消费满50元，可享9折优惠</li>
+                    <li>[川湘馆] 单次消费满50元，送大可乐一瓶</li>
+                    <li>[仁和兴川味酒楼] 单次消费满50元，可享9折优惠</li>
+                    <li>[川湘馆] 单次消费满50元，送大可乐一瓶</li>
+                </ul>
+                <ul class="clear"></ul>
+            </div>
+        </div>
+    </div>
+    <div class="clear"></div>
+</div>
+
+<?php $_smarty_tpl_vars = $this->_tpl_vars;
+$this->_smarty_include(array('smarty_include_tpl_file' => "topic_footer.html", 'smarty_include_vars' => array()));
+$this->_tpl_vars = $_smarty_tpl_vars;
+unset($_smarty_tpl_vars);
+ ?>
