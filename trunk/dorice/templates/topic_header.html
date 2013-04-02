@@ -42,51 +42,53 @@
 </div>
 <div id="sea_bg" class="com_bg">
     <div id="search">
-        
-        <div class="sea_bg">
-            <div class="s_list" id="s_list">
-                <ul>
-                    <li class="first last">餐厅</li>
-                    <li>餐厅</li>
-                    <li class="last">美食</li>
-                </ul>
+        <div class="search_all">
+            <div class="sea_bg">
+                <div class="s_list" id="s_list">
+                    <ul>
+                        <li class="first last">餐厅</li>
+                        <li>餐厅</li>
+                        <li class="last">美食</li>
+                    </ul>
+                </div>
+                <script>
+                    $("#s_list").mouseover(function(){
+                        $("#s_list li").show();
+                        $("#s_list li:eq(0)").removeClass('last');
+                        $("#s_list").addClass('s_cu');
+                    });
+                    $("#s_list").mouseout(function(){
+                        $("#s_list li:eq(1)").hide();
+                        $("#s_list li:eq(2)").hide();
+                        $("#s_list li:eq(0)").addClass('last');
+                        $("#s_list").removeClass('s_cu');
+                    });
+                    $("#s_list li:eq(1)").click(function(){
+                        $("#s_list li:eq(0)").html('餐厅');
+                        $("#s_list li:eq(1)").hide();
+                        $("#s_list li:eq(2)").hide();
+                        $("#s_list li:eq(0)").addClass('last');
+                        $("#s_list").removeClass('s_cu');
+                    });
+                    $("#s_list li:eq(2)").click(function(){
+                        $("#s_list li:eq(0)").html('美食');
+                        $("#s_list li:eq(1)").hide();
+                        $("#s_list li:eq(2)").hide();
+                        $("#s_list li:eq(0)").addClass('last');
+                        $("#s_list").removeClass('s_cu');
+                    });
+                </script>
             </div>
-            <script>
-                $("#s_list").mouseover(function(){
-                    $("#s_list li").show();
-                    $("#s_list li:eq(0)").removeClass('last');
-                    $("#s_list").addClass('s_cu');
-                });
-                $("#s_list").mouseout(function(){
-                    $("#s_list li:eq(1)").hide();
-                    $("#s_list li:eq(2)").hide();
-                    $("#s_list li:eq(0)").addClass('last');
-                    $("#s_list").removeClass('s_cu');
-                });
-                $("#s_list li:eq(1)").click(function(){
-                    $("#s_list li:eq(0)").html('餐厅');
-                    $("#s_list li:eq(1)").hide();
-                    $("#s_list li:eq(2)").hide();
-                    $("#s_list li:eq(0)").addClass('last');
-                    $("#s_list").removeClass('s_cu');
-                });
-                $("#s_list li:eq(2)").click(function(){
-                    $("#s_list li:eq(0)").html('美食');
-                    $("#s_list li:eq(1)").hide();
-                    $("#s_list li:eq(2)").hide();
-                    $("#s_list li:eq(0)").addClass('last');
-                    $("#s_list").removeClass('s_cu');
-                });
-            </script>
+            <input type="text" id="sea" class="in"/>
+            <input type="button" id="sub"  value="搜 索" class="bu" onclick="search_all()"/>     
         </div>
-        <input type="text" id="sea" class="in"/>
-        <input type="button" id="sub"  value="搜 索" class="bu" onclick="search_all()"/>
         <div class="sea_hot">热门搜索：
             <span><a href="#">一品香</a></span>
             <span><a href="#">北京大饭店</a></span>
             <span><a href="#">东行宫</a></span>
             <span><a href="#">无二世家</a></span>
         </div>
+        <div class="clear"></div>
         <script>
             function search_all(){
                 var val=$("#sea").val();
