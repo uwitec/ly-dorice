@@ -1,0 +1,397 @@
+<?php /* Smarty version 2.6.26, created on 2013-03-27 08:57:40
+         compiled from topic_index.html */ ?>
+<?php $_smarty_tpl_vars = $this->_tpl_vars;
+$this->_smarty_include(array('smarty_include_tpl_file' => "topic_header.html", 'smarty_include_vars' => array()));
+$this->_tpl_vars = $_smarty_tpl_vars;
+unset($_smarty_tpl_vars);
+ ?>
+<div class="public bor">
+    <img src="templates/images/ad/ad4.jpg"/>
+</div>
+<div class="public">
+    <div id="pub_le">
+        <div class="pub_le fast">
+            <h1>快速入口</h1>
+            <div class="fast_in">
+                <ul>
+                    <li>多爱食提供的更多、更好！</li>
+                    <li><a href="#"><span class="f_login">登录</span></a><a href="#"><span class="f_login">注册</span></a></li>
+                    <li>快速订餐入口：</li>
+                    <li><input type="text" name="fast" class="in" value="宫保鸡丁"/></li>
+                    <li class="fast_or"><a href="#"><span class="f_wai">快速订餐</span></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="pub_le">
+            <h1 class="com_bg_2"><span class="h1"></span>排行榜</h1>
+            <div class="rank_sort">
+                <ul>
+                    <li class="current first">外卖排行榜</li>
+                    <li>预订排行榜</li>
+                </ul>
+                <ul class="clear"></ul>
+            </div>
+            <div class="rank" >
+                <ul>
+                    <li><b>1</b><span><a href="#">一品香(国贸桥东300米...)</a></span></li>
+                    <li><b>2</b><span><a href="#">一品香(国贸桥东300米...)</a></span></li>
+                    <li><b>3</b><span><a href="#">一品香(国贸桥东300米...)</a></span></li>
+                    <li><b>4</b><span><a href="#">一品香(国贸桥东300米...)</a></span></li>
+                    <li class="last"><b>5</b><span><a href="#">一品香(国贸桥东300米...)</a></span></li>
+                </ul>
+            </div>
+            <div class="rank" style="display: none;">
+                <ul>
+                    <li><b>1</b><span><a href="#">仁和兴川味酒楼(大望路北200米)</a></span></li>
+                    <li><b>2</b><span><a href="#">仁和兴川味酒楼(大望路北200米)</a></span></li>
+                    <li><b>3</b><span><a href="#">仁和兴川味酒楼(大望路北200米)</a></span></li>
+                    <li><b>4</b><span><a href="#">仁和兴川味酒楼(大望路北200米)</a></span></li>
+                    <li class="last"><b>5</b><span><a href="#">仁和兴川味酒楼(大望路北200米)</a></span></li>
+                </ul>
+            </div>
+        </div>
+        <script>
+            $(".rank_sort li").each(function(i,k){
+                $(this).mouseover(function(){
+                    $(".rank_sort li").removeClass('current');
+                    $(this).addClass('current');
+                    $(".rank").hide();
+                    $(".rank:eq("+i+")").show();
+                });
+            });
+        </script>
+        <div class="pub_le">
+            <img src="templates/images/ad/ad1.jpg"/>
+        </div>
+        <div class="pub_le">
+            <h1 class="com_bg_2"><span class="h1"></span>热门就餐地点</h1>
+            <div class="hot_site">
+                <ul>
+                    <li><a href="#"><span>国贸</span></a></li><li><a href="#"><span>大望路</span></a></li><li><a href="#"><span>八里桥</span></a></li>
+                    <li><a href="#"><span>魏公村</span></a></li><li><a href="#"><span>清华大学</span></a></li><li><a href="#"><span>三里屯</span></a></li>
+                    <li><a href="#"><span>安定门</span></a></li><li><a href="#"><span>西四</span></a></li><li><a href="#"><span>大红门</span></a></li>
+                    <li><a href="#"><span>国贸</span></a></li><li><a href="#"><span>大望路</span></a></li><li><a href="#"><span>八里桥</span></a></li>
+                    <li><a href="#"><span>魏公村</span></a></li><li><a href="#"><span>清华大学</span></a></li><li><a href="#"><span>三里屯</span></a></li>
+                    <li><a href="#"><span>安定门</span></a></li><li><a href="#"><span>西四</span></a></li><li><a href="#"><span>大红门</span></a></li>
+                    <li><a href="#"><span>国贸</span></a></li><li><a href="#"><span>大望路</span></a></li><li><a href="#"><span>八里桥</span></a></li>
+                    <li><a href="#"><span>魏公村</span></a></li><li><a href="#"><span>清华大学</span></a></li><li><a href="#"><span>三里屯</span></a></li>
+                    <li><a href="#"><span>安定门</span></a></li><li><a href="#"><span>西四</span></a></li><li><a href="#"><span>大红门</span></a></li>
+                </ul>
+                <ul class="clear"></ul>
+            </div>
+        </div>
+        <script>
+            $(".hot_site span").each(function(i,k){
+                $(this).mouseover(function(){
+                    $(".hot_site span").removeClass('current');
+                    $(this).addClass('current');
+                });
+                $(this).mouseout(function(){
+                    $(".hot_site span").removeClass('current');
+                });
+            });
+        </script>
+        <div class="pub_le">
+            <img src="templates/images/ad/ad2.jpg"/>
+        </div>
+        <div class="pub_le" id="o_ing">
+            <h1 class="ing"><span class="h1"></span>他们正在叫外卖</h1>
+            <div class="o_ing">
+                <ul>
+                    <li>
+                        <p class="o_fist">kappa叫了外卖【宫保鸡丁盖饭】</p>
+                        <p><a href="#">仁和兴川味酒楼(国贸桥东300米)</a></p>
+                    </li>
+                    <li>
+                        <p class="o_fist">kappa叫了外卖【宫保鸡丁盖饭】</p>
+                        <p><a href="#">仁和兴川味酒楼(国贸桥东300米)</a></p>
+                    </li>
+                    <li>
+                        <p class="o_fist">kappa叫了外卖【宫保鸡丁盖饭】</p>
+                        <p><a href="#">仁和兴川味酒楼(国贸桥东300米)</a></p>
+                    </li>
+                    <li>
+                        <p class="o_fist">kappa叫了外卖【宫保鸡丁盖饭】</p>
+                        <p><a href="#">仁和兴川味酒楼(国贸桥东300米)</a></p>
+                    </li>
+                    <li class="last">
+                        <p class="o_fist">kappa叫了外卖【宫保鸡丁盖饭】</p>
+                        <p><a href="#">仁和兴川味酒楼(国贸桥东300米)</a></p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="pub_le">
+            <h1 class="com_bg_2"><span class="h1"></span>最新专题</h1>
+            <div class="topic">
+                <ul>
+                    <li><a href="#">除夕夜享佳美年夜饭，领略异地风情</a></li>
+                    <li><a href="#">除夕夜享佳美年夜饭，领略异地风情</a></li>
+                    <li><a href="#">除夕夜享佳美年夜饭，领略异地风情</a></li>
+                    <li><a href="#">除夕夜享佳美年夜饭，领略异地风情</a></li>
+                    <li><a href="#">除夕夜享佳美年夜饭，领略异地风情</a></li>
+                    <li><a href="#">除夕夜享佳美年夜饭，领略异地风情</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="pub_le">
+            <img src="templates/images/ad/ad3.jpg"/>
+        </div>
+    </div>
+    <div id="pub_ri">
+        <div class="pub_ri" style="border:none;">
+            <div id="focus">
+                <img src="templates/images/ad/focus1.jpg" style="display: block">
+                <img src="templates/images/ad/focus2.jpg"/>
+                <img src="templates/images/ad/focus3.jpg"/>
+                <img src="templates/images/ad/focus4.jpg"/>
+                <img src="templates/images/ad/focus5.jpg"/>
+                <img src="templates/images/ad/focus6.jpg"/>
+                <div id="focus_num">
+                    <ul>
+                        <li class="current">1</li><li>2</li><li>3</li><li>4</li><li>5</li><li>6</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="pub_le" id="recommend">
+                <h1><span class="h1"></span>热门推荐</h1>
+                <div class="hot">
+                    <ul>
+                        <li><a href="#">[仁和兴川味酒楼]正宗川味 麻辣鲜香</a></li>
+                        <li><a href="#">[仁和兴川味酒楼]正宗川味 麻辣鲜香</a></li>
+                        <li><a href="#">[仁和兴川味酒楼]正宗川味 麻辣鲜香</a></li>
+                        <li><a href="#">[仁和兴川味酒楼]正宗川味 麻辣鲜香</a></li>
+                        <li class="last"><a href="#">[仁和兴川味酒楼]正宗川味 麻辣鲜香</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <script>
+            var t;
+            $("#focus_num li").each(function(i,k){
+                $(this).mouseover(function(){                          
+                    focus(i);
+                });
+            });
+            function focus(d,i){   
+                if(d==6){d=0;}
+                $("#focus_num li").removeClass('current');
+                $("#focus_num li:eq("+d+")").addClass('current');
+                $("#focus img").fadeOut();
+                $("#focus img:eq("+d+")").fadeIn();
+            }
+            function focus_change(){
+                for(var i=1;i<7;i++){
+                    setTimeout('focus('+i+')',i*4000);
+                }
+                t=setTimeout(focus_change,6*4000);
+            } 
+            focus_change();
+        </script>
+        <div class="pub_ri ieff" style="border: 1px solid #ff6600;">
+            <div class="active">
+                <h1>商家活动</h1>
+                <ul>
+                    <li><a href="#">[仁和兴川味酒楼]消费满500元，8折优惠</a></li>
+                    <li><a href="#">[仁和兴川味酒楼]消费满500元，8折优惠</a></li>
+                    <li><a href="#">[仁和兴川味酒楼]消费满500元，8折优惠</a></li>
+                    <li><a href="#">[仁和兴川味酒楼]消费满500元，8折优惠</a></li>
+                    <li><a href="#">[仁和兴川味酒楼]消费满500元，8折优惠</a></li>
+                </ul>
+            </div>
+            <div class="spe">
+                <h1>特价专区</h1>
+                <ul>
+                    <li>【<a href="#">宫保鸡丁盖饭</a>】特价<span>￥12</span></li>
+                    <li>【<a href="#">宫保鸡丁盖饭</a>】特价<span>￥12</span></li>
+                    <li>【<a href="#">宫保鸡丁盖饭</a>】特价<span>￥12</span></li>
+                    <li>【<a href="#">宫保鸡丁盖饭</a>】特价<span>￥12</span></li>
+                    <li>【<a href="#">宫保鸡丁盖饭</a>】特价<span>￥12</span></li>
+                    <li>【<a href="#">宫保鸡丁盖饭</a>】特价<span>￥12</span></li>
+                    <li>【<a href="#">宫保鸡丁盖饭</a>】特价<span>￥12</span></li>
+                    <li>【<a href="#">宫保鸡丁盖饭</a>】特价<span>￥12</span></li>
+                    <li>【<a href="#">宫保鸡丁盖饭</a>】特价<span>￥12</span></li>
+                    <li>【<a href="#">宫保鸡丁盖饭</a>】特价<span>￥12</span></li>
+                </ul>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <div class="pub_ri ieff">
+            <div class="join_ti">
+                <ul>
+                    <li class="current">最新加入</li>
+                    <li>潮流名店</li>
+                    <li>网友好评</li>
+                    <li class="last"></li>
+                </ul>
+                <ul class="clear"></ul>
+            </div>
+            <div class="join" style="display: block;">
+                <ul>
+                    <li><a href="#"><img src="templates/images/service/join1.jpg"/></a><p><a href="#">花木兰</a></p></li>
+                    <li><a href="#"><img src="templates/images/service/join1.jpg"/></a><p><a href="#">花木兰</a></p></li>
+                    <li><a href="#"><img src="templates/images/service/join1.jpg"/></a><p><a href="#">花木兰</a></p></li>
+                    <li><a href="#"><img src="templates/images/service/join1.jpg"/></a><p><a href="#">花木兰</a></p></li>
+                </ul>
+                <ul class="clear"></ul>
+            </div>
+            <div class="join">
+                <ul>
+                    <li><a href="#"><img src="templates/images/service/join3.jpg"/></a><p><a href="#">花木兰</a></p></li>
+                    <li><a href="#"><img src="templates/images/service/join3.jpg"/></a><p><a href="#">花木兰</a></p></li>
+                    <li><a href="#"><img src="templates/images/service/join3.jpg"/></a><p><a href="#">花木兰</a></p></li>
+                    <li><a href="#"><img src="templates/images/service/join3.jpg"/></a><p><a href="#">花木兰</a></p></li>
+                </ul>
+                <ul class="clear"></ul>
+            </div>
+            <div class="join">
+                <ul>
+                    <li><a href="#"><img src="templates/images/service/join1.jpg"/></a><p><a href="#">花木兰</a></p></li>
+                    <li><a href="#"><img src="templates/images/service/join1.jpg"/></a><p><a href="#">花木兰</a></p></li>
+                    <li><a href="#"><img src="templates/images/service/join1.jpg"/></a><p><a href="#">花木兰</a></p></li>
+                    <li><a href="#"><img src="templates/images/service/join1.jpg"/></a><p><a href="#">花木兰</a></p></li>
+                </ul>
+                <ul class="clear"></ul>
+            </div>
+        </div>
+        <script>
+            $(".join_ti li").each(function(i,k){
+                if(i<3){
+                    $(this).mouseover(function(){
+                        $(".join_ti li").removeClass('current');
+                        $(this).addClass('current');
+                        $(".join").hide();
+                        $(".join:eq("+i+")").show();
+                    });
+                }
+            });
+        </script>
+        <div class="pub_ri f_bor ieff">
+            <div class="food_ti">美食精选</div>
+            <div class="food">
+                <ul>
+                    <li><a href="#"><img src="templates/images/cate/food1.jpg"/></a><p><a href="#">宫保鸡丁</a></p></li>
+                    <li><a href="#"><img src="templates/images/cate/food3.jpg"/></a><p><a href="#">宫保鸡丁</a></p></li>
+                    <li><a href="#"><img src="templates/images/cate/food3.jpg"/></a><p><a href="#">宫保鸡丁</a></p></li>
+                    <li><a href="#"><img src="templates/images/cate/food1.jpg"/></a><p><a href="#">宫保鸡丁</a></p></li>
+                </ul>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <div class="pub_ri" style="border:none;">
+            <div class="way">
+                <h1>健康饮食</h1>
+                <ul>
+                    <li><a href="#"><img src="templates/images/cate/hel_1.jpg"/></a><p><a href="#">宫保鸡丁</a></p></li>
+                    <li><a href="#"><img src="templates/images/cate/hel_2.jpg"/></a><p><a href="#">宫保鸡丁</a></p></li>
+                    <li><a href="#"><img src="templates/images/cate/hel_3.jpg"/></a><p><a href="#">宫保鸡丁</a></p></li>
+                    <li><a href="#"><img src="templates/images/cate/hel_4.jpg"/></a><p><a href="#">宫保鸡丁</a></p></li>
+                    <li><a href="#"><img src="templates/images/cate/hel_4.jpg"/></a><p><a href="#">宫保鸡丁</a></p></li>
+                    <li><a href="#"><img src="templates/images/cate/hel_4.jpg"/></a><p><a href="#">宫保鸡丁</a></p></li>
+                </ul>
+            </div>
+            <div class="hot_way">
+                <h1>美食攻略</h1>
+                <ul>
+                    <li><a href="index.php?mod=news&code=strategy">多吃番茄心情好,能防抑郁症</a></li>
+                    <li><a href="index.php?mod=news&code=strategy&id=1">多吃番茄心情好,能防抑郁症</a></li>
+                    <li><a href="#">多吃番茄心情好,能防抑郁症</a></li>
+                    <li><a href="#">多吃番茄心情好,能防抑郁症</a></li>
+                    <li><a href="#">多吃番茄心情好,能防抑郁症</a></li>
+                    <li class="last"><a href="#">多吃番茄心情好,能防抑郁症</a></li>
+                </ul>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <div class="pub_ri" style="border: none;">
+            <div class="list">
+                <h1>热门榜单</h1>
+                <ul>
+                    <li><a href="index.php?mod=rank&code=order_month">本月热门餐厅排行榜</a></li>
+                    <li><a href="#">本周热门餐厅排行榜</a></li>
+                    <li><a href="#">本月热门外卖餐厅排行榜</a></li>
+                    <li><a href="#">本周热门外卖餐厅排行榜</a></li>
+                    <li><a href="#">热门美食排行榜</a></li>
+                    <li><a href="#">餐厅评论排行榜</a></li>
+                    <li class="last"><a href="index.php?mod=rank">更多>></a></li>
+                </ul>     
+            </div>
+            <div class="comment">
+                <h1 class="com_bg_2"><span class="current">餐厅评论</span><span>美食评论</span></h1>
+                <ul>
+                    <li>
+                        <div class="com_img"><a href="#"><img src="templates/images/service/join1.jpg"/></a></div>
+                        <div class="com_all">
+                            <p>网友<a href="#">kappa</a>评论<a href="#" class="a1">无二世家</a></p>
+                            <p class="p1">整体环境很好，服务也不错，菜品水平还有提高空间。性价比不错。推荐龙井虾仁 石锅香芋 千岛湖大鱼头。</p>
+                        </div>
+                        <div class="clear"></div>
+                    </li>
+                    <li class="last">
+                        <div class="com_img"><a href="#"><img src="templates/images/service/join2.jpg"/></a></div>
+                        <div class="com_all">
+                            <p>网友<a href="#">kappa</a>评论<a href="#" class="a1">无二世家</a></p>
+                            <p class="p1">整体环境很好，服务也不错，菜品水平还有提高空间。性价比不错。推荐龙井虾仁 石锅香芋 千岛湖大鱼头。</p>
+                        </div>
+                        <div class="clear"></div>
+                    </li>
+                </ul>
+                <ul style="display: none;">
+                    <li>
+                        <div class="com_img"><a href="#"><img src="templates/images/cate/food1.jpg"/></a></div>
+                        <div class="com_all">
+                            <p>网友<a href="#">kappa</a>评论<a href="#" class="a1">红烧排骨</a>【<a href="#">北京大饭店</a>】</p>
+                            <p class="p1">整体环境很好，服务也不错，菜品水平还有提高空间。性价比不错。推荐龙井虾仁 石锅香芋 千岛湖大鱼头。</p>
+                        </div>
+                        <div class="clear"></div>
+                    </li>
+                    <li class="last">
+                        <div class="com_img"><a href="#"><img src="templates/images/cate/food3.jpg"/></a></div>
+                        <div class="com_all">
+                            <p>网友<a href="#">kappa</a>评论<a href="#" class="a1">红烧排骨</a>【<a href="#">北京大饭店</a>】</p>
+                            <p class="p1">整体环境很好，服务也不错，菜品水平还有提高空间。性价比不错。推荐龙井虾仁 石锅香芋 千岛湖大鱼头。</p>
+                        </div>
+                        <div class="clear"></div>
+                    </li>
+                </ul>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <script>
+            $(".comment h1 span").each(function(i,k){
+                $(this).mouseover(function(){
+                    $(".comment h1 span").removeClass('current');
+                    $(this).addClass('current');
+                    $(".comment ul").hide();
+                    $(".comment ul:eq("+i+")").show();
+                });
+            });
+        </script>
+        <div class="pub_ri ieff">
+            <h1 class="com_bg_2">积分兑换</h1>
+            <div class="jifen">         
+                <ul>
+                    <li><a href="#"><img src="templates/images/cate/food3.jpg"/></a><p>【花木兰】辣子鸡丁</p><p>所需积分2000</p></li>
+                    <li><a href="#"><img src="templates/images/cate/food3.jpg"/></a><p>【花木兰】辣子鸡丁</p><p>所需积分2000</p></li>
+                    <li><a href="#"><img src="templates/images/cate/food3.jpg"/></a><p>【花木兰】辣子鸡丁</p><p>所需积分2000</p></li>
+                    <li><a href="#"><img src="templates/images/cate/food3.jpg"/></a><p>【花木兰】辣子鸡丁</p><p>所需积分2000</p></li>
+                    <li><a href="#"><img src="templates/images/cate/food3.jpg"/></a><p>【花木兰】辣子鸡丁</p><p>所需积分2000</p></li>
+                    <li><a href="#"><img src="templates/images/cate/food3.jpg"/></a><p>【花木兰】辣子鸡丁</p><p>所需积分2000</p></li>
+                    <li><a href="#"><img src="templates/images/cate/food3.jpg"/></a><p>【花木兰】辣子鸡丁</p><p>所需积分2000</p></li>
+                    <li><a href="#"><img src="templates/images/cate/food3.jpg"/></a><p>【花木兰】辣子鸡丁</p><p>所需积分2000</p></li>
+                </ul>
+                <ul class="clear"></ul>
+            </div>
+        </div>
+    </div>
+    <div class="clear"></div>
+</div>
+<div class="public bor">
+    <img src="templates/images/ad/ad4.jpg"/>
+</div>
+<?php $_smarty_tpl_vars = $this->_tpl_vars;
+$this->_smarty_include(array('smarty_include_tpl_file' => "topic_footer.html", 'smarty_include_vars' => array()));
+$this->_tpl_vars = $_smarty_tpl_vars;
+unset($_smarty_tpl_vars);
+ ?>

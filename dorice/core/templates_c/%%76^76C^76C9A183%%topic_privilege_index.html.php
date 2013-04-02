@@ -1,0 +1,191 @@
+<?php /* Smarty version 2.6.26, created on 2013-03-21 05:19:47
+         compiled from topic_privilege_index.html */ ?>
+<?php $_smarty_tpl_vars = $this->_tpl_vars;
+$this->_smarty_include(array('smarty_include_tpl_file' => "topic_header.html", 'smarty_include_vars' => array()));
+$this->_tpl_vars = $_smarty_tpl_vars;
+unset($_smarty_tpl_vars);
+ ?>
+<div class="nav">多爱食 > 优惠</div>
+<div class="public">
+    <div id="pub_le">
+        <div class="pub_le">
+            <h1 class="com_bg_2"><span class="h1"></span>今日特价（外卖）</h1>
+            <div class="o_rank">
+                <ul>
+                    <li><span>鱼香肉丝盖饭</span><span class="special">特价：￥14</span><p>老外婆川菜馆</p></li>
+                    <li><span>鱼香肉丝盖饭</span><span class="special">特价：￥14</span><p>老外婆川菜馆</p></li>
+                    <li><span>鱼香肉丝盖饭</span><span class="special">特价：￥14</span><p>老外婆川菜馆</p></li>
+                    <li><span>鱼香肉丝盖饭</span><span class="special">特价：￥14</span><p>老外婆川菜馆</p></li>
+                    <li class="last"><span>鱼香肉丝盖饭</span><span class="special">特价：￥14</span><p>老外婆川菜馆</p></li>
+                </ul>
+            </div>  
+        </div>
+        <div class="pub_le" id="o_ing">
+            <h1 class="ing"><span class="h1"></span>最新活动（预订）</h1>
+            <div class="privilege_order">
+                <ul>
+                    <li><a href="#">[北京大饭店]预订9折优惠，消费满500元更有好礼相送</a></li>
+                    <li><a href="#">[北京大饭店]预订9折优惠，消费满500元更有好礼相送</a></li>
+                    <li><a href="#">[北京大饭店]预订9折优惠，消费满500元更有好礼相送</a></li>
+                    <li><a href="#">[北京大饭店]预订9折优惠，消费满500元更有好礼相送</a></li>
+                    <li class="last"><a href="#">[北京大饭店]预订9折优惠，消费满500元更有好礼相送</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="pub_le">
+            <h1 class="com_bg_2"><span class="h1"></span>积分促销</h1>
+            <div class="padding">
+                <ul>
+                    <li>
+                        <div class="re_img"><a href="#"><img src="templates/images/service/join1.jpg"/></a></div>
+                        <div class="re_all">
+                            <p><span class="style1">宫保鸡丁盖饭</span></p>
+                            <p>仁和兴川味酒楼</p>
+                            <p>所需积分：5000</p>
+                        </div>
+                        <div class="clear"></div>
+                    </li>
+                    <li>
+                        <div class="re_img"><a href="#"><img src="templates/images/service/join1.jpg"/></a></div>
+                        <div class="re_all">
+                            <p><span class="style1">宫保鸡丁盖饭</span></p>
+                            <p>仁和兴川味酒楼</p>
+                            <p>所需积分：5000</p>
+                        </div>
+                        <div class="clear"></div>
+                    </li>
+                    <li class="last">
+                        <div class="re_img"><a href="#"><img src="templates/images/service/join1.jpg"/></a></div>
+                        <div class="re_all">
+                            <p><span class="style1">宫保鸡丁盖饭</span></p>
+                            <p>仁和兴川味酒楼</p>
+                            <p>所需积分：5000</p>
+                        </div>
+                        <div class="clear"></div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="pub_le">
+            <h1 class="com_bg_2"><span class="h1"></span>专题活动</h1>
+            <div class="topic">
+                <ul>
+                    <li><a href="#">除夕夜享佳美年夜饭，领略异地风情</a></li>
+                    <li><a href="#">除夕夜享佳美年夜饭，领略异地风情</a></li>
+                    <li><a href="#">除夕夜享佳美年夜饭，领略异地风情</a></li>
+                    <li><a href="#">除夕夜享佳美年夜饭，领略异地风情</a></li>
+                    <li><a href="#">除夕夜享佳美年夜饭，领略异地风情</a></li>
+                    <li><a href="#">除夕夜享佳美年夜饭，领略异地风情</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="pub_ri">
+        <div class="pub_ri bg3">
+            <div class="focus_left">
+                <div id="f_img"><img src=""/></div>
+                <div class="content style1">【浮尘世家】来就打折，消费满500元更有好礼相送，先到先得</div>
+            </div>
+            <div class="focus_right">
+                <ul>
+                    <li class="current"><img src="templates/images/service/join2.jpg"/></li>
+                    <li><img src="templates/images/service/join1.jpg"/></li>
+                    <li><img src="templates/images/service/join2.jpg"/></li>
+                    <li class="last"><img src="templates/images/service/join1.jpg"/></li>
+                </ul>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <script>
+            $("#f_img img").attr('src','templates/images/service/join2.jpg');
+            $(".focus_right li").each(function(i,k){
+                $(this).mouseover(function(){
+                    $(".focus_right li").removeClass('current');
+                    $(this).addClass('current');
+                    $("#f_img img").attr("src","templates/images/service/join1.jpg");
+//                    $("#f_img img").attr("src","templates/images/service/join"+(i+1)+".jpg");
+                });
+            });
+        </script>
+        <div class="pub_ri">
+            <h1>外卖特价美食</h1>
+            <div class="list_spe">
+                <ul>
+                    <li>
+                        <div class="spe_img"><img src="templates/images/cate/food1.jpg"/></div>
+                        <div class="spe_con">
+                            <p>鱼香肉丝盖饭<b class="style1">特价￥14</b><span>已出售34份</span></p>
+                            <p>北京大饭店</p>
+                            <p class="p1">网友热评：味道很正宗，地道的陕西风味，在北京不好找，周边环境也不错，交通方便，合适宴请。服务员的服务也很到位，以后会常去。</p>
+                        </div>
+                        <div class="clear"></div>
+                    </li>
+                    <li>
+                        <div class="spe_img"><img src="templates/images/cate/food1.jpg"/></div>
+                        <div class="spe_con">
+                            <p>鱼香肉丝盖饭<b class="style1">特价￥14</b><span>已出售34份</span></p>
+                            <p>北京大饭店</p>
+                            <p class="p1">网友热评：味道很正宗，地道的陕西风味，在北京不好找，周边环境也不错，交通方便，合适宴请。服务员的服务也很到位，以后会常去。</p>
+                        </div>
+                        <div class="clear"></div>
+                    </li>
+                    <li>
+                        <div class="spe_img"><img src="templates/images/cate/food1.jpg"/></div>
+                        <div class="spe_con">
+                            <p>鱼香肉丝盖饭<b class="style1">特价￥14</b><span>已出售34份</span></p>
+                            <p>北京大饭店</p>
+                            <p class="p1">网友热评：味道很正宗，地道的陕西风味，在北京不好找，周边环境也不错，交通方便，合适宴请。服务员的服务也很到位，以后会常去。</p>
+                        </div>
+                        <div class="clear"></div>
+                    </li>
+                    <li class="last">
+                        <div class="spe_img"><img src="templates/images/cate/food1.jpg"/></div>
+                        <div class="spe_con">
+                            <p>鱼香肉丝盖饭<b class="style1">特价￥14</b><span>已出售34份</span></p>
+                            <p>北京大饭店</p>
+                            <p class="p1">网友热评：味道很正宗，地道的陕西风味，在北京不好找，周边环境也不错，交通方便，合适宴请。服务员的服务也很到位，以后会常去。</p>
+                        </div>
+                        <div class="clear"></div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="pub_ri">
+            <div class="active">
+                <h1>商家活动(<span>预订</span>)</h1>
+                <ul>
+                    <li><a href="#">[仁和兴川味酒楼]消费满500元，8折优惠</a></li>
+                    <li><a href="#">[仁和兴川味酒楼]消费满500元，8折优惠</a></li>
+                    <li><a href="#">[仁和兴川味酒楼]消费满500元，8折优惠</a></li>
+                    <li><a href="#">[仁和兴川味酒楼]消费满500元，8折优惠</a></li>
+                    <li><a href="#">[仁和兴川味酒楼]消费满500元，8折优惠</a></li>
+                </ul>
+            </div>
+            <div class="spe">
+                <h1>特价专区(<span>外卖</span>)</h1>
+                <ul>
+                    <li>【<a href="#">宫保鸡丁盖饭</a>】特价<span>￥12</span></li>
+                    <li>【<a href="#">宫保鸡丁盖饭</a>】特价<span>￥12</span></li>
+                    <li>【<a href="#">宫保鸡丁盖饭</a>】特价<span>￥12</span></li>
+                    <li>【<a href="#">宫保鸡丁盖饭</a>】特价<span>￥12</span></li>
+                    <li>【<a href="#">宫保鸡丁盖饭</a>】特价<span>￥12</span></li>
+                    <li>【<a href="#">宫保鸡丁盖饭</a>】特价<span>￥12</span></li>
+                    <li>【<a href="#">宫保鸡丁盖饭</a>】特价<span>￥12</span></li>
+                    <li>【<a href="#">宫保鸡丁盖饭</a>】特价<span>￥12</span></li>
+                    <li>【<a href="#">宫保鸡丁盖饭</a>】特价<span>￥12</span></li>
+                    <li>【<a href="#">宫保鸡丁盖饭</a>】特价<span>￥12</span></li>
+                </ul>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <div class="pub_ri">
+            <img src="templates/images/ad/ad5.jpg" style="width:700px;*width:698px;"/>
+        </div>
+    </div>
+    <div class="clear"></div>
+</div>
+<?php $_smarty_tpl_vars = $this->_tpl_vars;
+$this->_smarty_include(array('smarty_include_tpl_file' => "topic_footer.html", 'smarty_include_vars' => array()));
+$this->_tpl_vars = $_smarty_tpl_vars;
+unset($_smarty_tpl_vars);
+ ?>
