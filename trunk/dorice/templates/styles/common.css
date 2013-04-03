@@ -216,7 +216,7 @@ h1 span.more{position: absolute;top:0;right:10px;font-size: 13px;color:#333;font
 .nav span{margin-left: 13px;}
 .select{border:1px solid #ccc;padding:7px 0;}
 .select .sort{width:237px;float: left;display: inline;border-right: 2px dotted #ccc;}
-.select .sort a{padding:3px 5px;*padding:4px 5px 1px 5px;float: left;display: inline;border:1px solid #ccc;border-bottom: 2px solid #ccc;background: url(../images/public/bg.png);margin: 5px 5px 5px 10px;white-space:nowrap;}
+.select .sort a{padding:3px 5px;*padding:4px 5px 1px 5px;float: left;display: inline;border:1px solid #ccc;border-bottom: 2px solid #ccc;background: url(../images/public/bg.png);margin: 3px 3px 3px 9px;white-space:nowrap;}
 #cate_show{position: relative;}
 .cate_one{width:201px;*width:223px;padding:7px 9px 0 9px;border: 1px solid #ccc;border-bottom: 3px solid #A2A2A2;border-right: 3px solid #ccc;background: url(../images/public/bg.png);position: absolute;}
 .cate_one img{width: 201px;}
@@ -230,11 +230,12 @@ h1 span.more{position: absolute;top:0;right:10px;font-size: 13px;color:#333;font
 .cate_one p b.cu{position: absolute;top:-6px;right:7px;color:#FF4F4F;}
 .cate_one span.store1{cursor: pointer;position: relative;margin-top:5px;display: none;float: left;width:86px;height:20px;background: url(../images/public/store.gif) 14px -22px no-repeat;}
 .cate_one .store1 i{width:58px;height:20px;background: url(../images/public/store.gif) left -45px no-repeat;display: block;border:none;float: left;}
-#cate_sort{border-bottom: 2px solid #ff6600;width:100%;position: relative;font-weight: bold;font-family:'Microsoft YaHei';}
-#cate_sort li{float: right;padding: 3px 15px;margin-right:20px;}
-#cate_sort li.current{background-color: #ff6600;color:#fff;}
-#cate_sort span{position: absolute;left:10px;top:0px;padding: 3px 15px;background-color: #ff6600;color:#fff;}
+#cate_sort{border-bottom: 2px solid #EC7066;width:100%;position: relative;font-weight: bold;font-family:'Microsoft YaHei';}
+#cate_sort li{float: right;padding: 3px 15px;margin-right:15px;}
+#cate_sort li.current{background-color: #EC7066;color:#fff;}
+#cate_sort span{position: absolute;left:10px;top:0px;padding: 3px 15px;background-color: #eee;}
 #cate_sort li.current a{color:#fff;}
+#cate_sort li.line{padding:0;background-color: #ccc;width: 2px;height:17px;margin-top:4px;*margin-top:3px;}
 #cate_sort li a{color:#333;}
 #cate_sort li a:hover{text-decoration: none;}
 
