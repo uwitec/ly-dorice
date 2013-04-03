@@ -2,6 +2,9 @@
 /* DBMS name:      MySQL 5.0                                    */
 /* Created on:     2013/4/2 15:22:29                            */
 /*==============================================================*/
+DROP DATABASE IF EXISTS `ly_dorice`;
+CREATE DATABASE `ly_dorice` /*!40100 DEFAULT CHARACTER SET utf8 */;
+USE `ly_dorice`;
 
 
 drop table if exists ly_activity;
