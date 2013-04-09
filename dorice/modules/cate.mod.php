@@ -21,7 +21,9 @@ class ModSmarty extends Smarty{
     }
     function Execute(){
         switch ($this->code){
-    
+            case 'info':
+                $this->cateInfo();
+                break;
             default :
                 $this->main();
                 break;
@@ -30,7 +32,9 @@ class ModSmarty extends Smarty{
     function main(){
         $this->display('topic_cate_index.html');
     }
-    
+    function cateInfo(){
+        $this->display('topic_cate_info.html');
+    }
 }
 
 ?>
