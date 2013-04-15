@@ -9,13 +9,16 @@ and open the template in the editor.
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link type="text/css" rel="stylesheet" href="templates/styles/common.css"/>
         <script type="text/javascript" src="templates/js/jquery.js"></script>
+        <script type="text/javascript" charset="GB2312" src="templates/js/public.js"></script>
     </head>
     <body>
         <div class="head">
             <div class="head_con">
                 <div class="head_le">
-<!--                    <span><b>中午好，<a href="#">James</a>，欢迎来到多爱食！</b></span><span class="space">退出</span>-->
-                    <span><b>中午好，欢迎来到<span class="style1">多爱食</span>！</b></span><span class="space">[<a href="#">登录</a>]</span><span class="space">[<a href="#">注册</a>]</span>
+<!--                    <span><b><script>showtime()</script>，<a href="#">James</a>，欢迎来到多爱食！</b></span><span class="space">退出</span>-->
+                    <span><b><script>showtime()</script>，欢迎来到<span class="style1">多爱食</span>！</b></span>
+                    <span class="space">[<a href="index.php?mod=user&code=login" target="_blank">登录</a>]</span>
+                    <span class="space">[<a href="index.php?mod=user&code=register" target="_blank">注册</a>]</span>
                 </div>
                 <div class="head_ri">
                     <ul>
@@ -24,7 +27,7 @@ and open the template in the editor.
                         <li><a href="#">我的美食筐</a></li>
                         <li><a href="#">我的收藏</a></li>
                         <li><a href="#">积分兑换</a></li>
-                        <li><a href="#">收藏本站</a></li>
+                        <li><a href="javascript:void(0);" onclick="AddFavorite('多爱食网上订餐',window.location.href)">收藏本站</a></li>
                         <li class="last"><a href="#">微博关注</a></li>
                     </ul>
                 </div>
