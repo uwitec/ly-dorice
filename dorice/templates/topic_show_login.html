@@ -1,0 +1,41 @@
+<div id="showPanel"></div>
+<div id="showLogin"></div>
+<div id="showLoginCon">
+    <a class="close" onclick="closeLogin()"></a>
+    <div class="loginTi"><span>快速登录多爱食</span></div>
+    <div class="loginExt">
+        <ul>
+            <li class="A1">欢迎登录多爱食</li>
+            <li class="A2">用户名：<input type="text" class="txt"/></li>
+            <li class="A3">密码：<input type="password" class="txt"/></li>
+            <li class="auto"><input type="checkbox" checked/>记住账号<input type="checkbox" checked style="margin-left:15px;"/>自动登录</li>
+            <li class="A4"><input type="button" value="登 录" class="fastLogin"/></li>
+        </ul>
+    </div>
+    <div class="loginFast">
+        <dl>
+            <dt>使用第三方账号登录多爱食：</dt>
+            <dd>
+                <a href="#"><img src="templates/images/public/qq.jpg"/></a>
+                <a href="#"><img src="templates/images/public/sina.jpg"/></a>
+                <a href="#"><img src="templates/images/public/renren.jpg"/></a>
+            </dd>
+        </dl>
+    </div>
+    <div class="logoFix"></div>
+    <div class="loginFoot">
+        <span>还没有注册？点击<a href="#">这里</a>注册</span><span>忘记了密码？点击<a href="#">这里</a>找回密码</span>
+    </div>
+</div>
+<script>
+    var m=document.body.scrollHeight+20;
+    var w=(window.screen.width-$("#showLogin").width())/2-20;
+    var h=(window.screen.height-$("#showLogin").height())/2-60;
+    var w1=(window.screen.width-$("#showLoginCon").width())/2-20;
+    var h1=(window.screen.height-$("#showLoginCon").height())/2-60;
+    $("#showPanel").height(m);
+    $("#showLogin").css("left",w);
+    $("#showLogin").css("top",h);
+    $("#showLoginCon").css("left",w1);
+    $("#showLoginCon").css("top",h1);
+</script>
