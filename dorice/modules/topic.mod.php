@@ -33,7 +33,7 @@ class ModSmarty extends Smarty{
         $this->display('topic_index.html');
     }
     function search(){
-        $key=  getUrl('key');
+        $key=  Get('key');
         $this->assign('key',$key);
         $this->display('topic_search_index.html');
     }
