@@ -577,6 +577,7 @@ class Smarty
     }
     function config(){
         include 'configs/config.php';
+        $this->conn();
     }
     /**
      * assigns values to template variables
