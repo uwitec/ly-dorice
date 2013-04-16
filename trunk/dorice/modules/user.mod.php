@@ -27,6 +27,9 @@ class ModSmarty extends Smarty{
             case 'register':
                 $this->member_register();
                 break;
+            case 'seek':
+                $this->seek_password();
+                break;
             case 'checkcode':
                 $this->checkCode();
                 break;
@@ -39,7 +42,11 @@ class ModSmarty extends Smarty{
         $this->display('topic_login.html');
     }
     function member_register(){
+        
         $this->display('topic_register.html');
+    }
+    function seek_password(){
+        $this->display('topic_seek.html');
     }
     function checkCode(){
         $num=6;
@@ -54,7 +61,8 @@ class ModSmarty extends Smarty{
         for ($i=0; $i<$num; $i++){ 
                 $code.= $str[mt_rand(0, strlen($str)-1)]; 
         } 
-        $_SESSION['check_num']=$code;
+        //['check_num']=$code;
+        Session('check_num',$code);
         // 画图像 
         $im = imagecreatetruecolor($width,$height); 
         // 定义要用到的颜色 
