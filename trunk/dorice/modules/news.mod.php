@@ -46,7 +46,7 @@ class ModSmarty extends Smarty{
     }
     function strategy(){
         $title='美食攻略';
-        $id=  getUrl('id');
+        $id=  Get('id');
         $this->assign('title',$title);
         if($id==''){
             $this->display('topic_essay_index.html');
