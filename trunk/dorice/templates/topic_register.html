@@ -19,49 +19,49 @@
         <table>
             <tr>
                 <td class="listName">用户名：</td>
-                <td class="listInput"><input type="text" class="nax"/></td>
-                <td class="listCon">3-20位小写字母、数字或汉字（汉字算两位）组成。</td>
+                <td class="listInput"><input type="text" class="nax" name="username" id="username" onblur="showName(this.value)" onfocus="showState(1)"/></td>
+                <td class="listCon">4-20位小写字母、数字或汉字（汉字算两位）组成</td>
             </tr>
             <tr>
                 <td class="listName">密码：</td>
-                <td class="listInput"><input type="password" class="nax"/></td>
-                <td class="listCon">密码必须在5-20个字符之间，可由数字和字母或符号组成。</td>
+                <td class="listInput"><input type="password" class="nax" name="password1" id="password1" onblur="showPass(this.value,1)" onfocus="showState(2)"/></td>
+                <td class="listCon">密码必须在6-16个字符之间，可由数字和字母或符号组成</td>
             </tr>
             <tr>
                 <td class="listName">确认密码：</td>
-                <td class="listInput"><input type="password" class="nax"/></td>
-                <td class="listCon">请再输入一遍您上面输入的密码。</td>
+                <td class="listInput"><input type="password" class="nax" name="password2" id="password2" onblur="showPass(this.value,2)" onfocus="showState(3)"/></td>
+                <td class="listCon">请再输入一遍您上面输入的密码</td>
             </tr>
             <tr>
                 <td class="listName">邮箱：</td>
-                <td class="listInput"><input type="text" class="nax"/></td>
-                <td class="listCon">在您密码丢失时可以帮助您顺利的找回密码，请您提供准确的邮箱地址。</td>
+                <td class="listInput"><input type="text" class="nax" name="email" id="email" onblur="showEmail(this.value)" onfocus="showState(4)"/></td>
+                <td class="listCon">在您密码丢失时可以帮助您顺利的找回密码，请您提供准确的邮箱地址</td>
             </tr>
             <tr>
                 <td class="listName">验证码：</td>
                 <td class="listInput" id="checkCode">
-                    <input type="text" class="checkCode"/>
-                    <span class="checkImg"><img src="index.php?mod=user&code=checkcode"/></span>
+                    <input type="text" class="checkCode" name="code" id="code" onblur="showCode(this.value)" onfocus="showState(5)"/>
+                    <span class="checkImg"><img src="index.php?mod=user&code=checkcode" onclick="reloadCode()" id="checkNum"/></span>
                 </td>
                 <td class="listCon">请输入图象中的字符,点击验证码刷新</td>
             </tr>
             <tr>
                 <td class="listName"></td>
-                <td class="listInput"><input type="checkbox" value="" checked/>我已经阅读并同意<span class="fix">多爱食用户注册协议<span></td>
+                <td class="listInput"><input type="checkbox" value=""  name="agree" id="agree" onchange="showAgree()"/>我已经阅读并同意<span class="fix">多爱食用户注册协议<span></td>
                 <td class="listCon"></td>
             </tr>
             <tr>
                 <td class="listName"></td>
-                <td class="listInput"><input type="button" value="注 册" class="login_submit"/></td>
+                <td class="listInput"><input type="button" value="注 册" class="login_submit" onclick="registerSubmit()"/></td>
                 <td class="listCon"></td>
             </tr>
         </table>
     </div>
     <div id="login_right">
         <p>如果你已经注册了多爱食账号，请点击这里登录！</p>
-        <p><a href="#">登 录</a></p>
+        <p><a href="index.php?mod=user&code=login">登 录</a></p>
         <p>啊？忘记多爱食登录密码了？好吧，点击这里找回密码！</p>
-        <p><a href="#">找回密码</a></p>
+        <p><a href="index.php?mod=user&code=seek">找回密码</a></p>
         <dl>
             <dt>注册多爱食，您可以：</dt>
             <dd>1.预订餐厅座位，比别人先到一步。</dd>
