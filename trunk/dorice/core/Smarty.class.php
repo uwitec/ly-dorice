@@ -71,6 +71,7 @@ class Smarty
     var $db_user='';
     var $db_pass='';
     var $db_port='3306';
+    var $cookie_expire='';
     /**
      * The name of the directory where templates are located.
      *
@@ -572,7 +573,7 @@ class Smarty
      */
     function Smarty()
     {
-      $this->assign('SCRIPT_NAME', isset($_SERVER['SCRIPT_NAME']) ? $_SERVER['SCRIPT_NAME']
+        $this->assign('SCRIPT_NAME', isset($_SERVER['SCRIPT_NAME']) ? $_SERVER['SCRIPT_NAME']
                     : @$GLOBALS['HTTP_SERVER_VARS']['SCRIPT_NAME']);
     }
     function config(){
