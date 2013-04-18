@@ -11,12 +11,18 @@ if(!defined('SMARTY'))
 class ModSmarty extends Smarty{
     var $code;
     var $mod;
+    var $ID;
     function ModSmarty($mod,$code){
         $this->config();
+        $id=  GetID('id');
+        $this->ID=$id;
         $this->code=$code;
         $this->mod=$mod;
+        $this->assign('ID',$this->ID);
         $this->assign('mod', $this->mod);
         $this->assign('code', $this->code);
+        $member=member($this->ID);
+        $this->assign('member',$member);
         $this->Execute();
     }
     function Execute(){
@@ -46,7 +52,7 @@ class ModSmarty extends Smarty{
     }
     function strategy(){
         $title='美食攻略';
-        $id=  Get('id');
+        $id=Get('id');
         $this->assign('title',$title);
         if($id==''){
             $this->display('topic_essay_index.html');

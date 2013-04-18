@@ -11,12 +11,18 @@ if(!defined('SMARTY'))
 class ModSmarty extends Smarty{
     var $code;
     var $mod;
+    var $ID;
     function ModSmarty($mod,$code){
         $this->config();
+        $id=  GetID('id');
+        $this->ID=$id;
         $this->code=$code;
         $this->mod=$mod;
+        $this->assign('ID',$this->ID);
         $this->assign('mod', $this->mod);
         $this->assign('code', $this->code);
+        $member=member($this->ID);
+        $this->assign('member',$member);
         $this->Execute();
     }
     function Execute(){
@@ -33,20 +39,33 @@ class ModSmarty extends Smarty{
             case 'checkcode':
                 $this->checkCode();
                 break;
+            case 'loginout':
+                $this->loginOut();
+                break;
             default :
                 $this->member_login();
                 break;
         }
     }
     function member_login(){
+        
         $this->display('topic_login.html');
     }
     function member_register(){
-        
+
         $this->display('topic_register.html');
     }
     function seek_password(){
         $this->display('topic_seek.html');
+    }
+    function loginOut(){
+        //unset($_SESSION['id']);
+        session_destroy();
+        setcookie("username","",time()-3600);
+        setcookie("password","",time()-3600);
+        setcookie("id","",time()-3600);
+        //echo "<script>window.location.href='index.php'</script>";
+        header('Location:index.php');
     }
     function checkCode(){
         $num=6;
@@ -61,8 +80,7 @@ class ModSmarty extends Smarty{
         for ($i=0; $i<$num; $i++){ 
                 $code.= $str[mt_rand(0, strlen($str)-1)]; 
         } 
-        //['check_num']=$code;
-        Session('check_num',$code);
+        $_SESSION['check_num']=$code;
         // 画图像 
         $im = imagecreatetruecolor($width,$height); 
         // 定义要用到的颜色 
