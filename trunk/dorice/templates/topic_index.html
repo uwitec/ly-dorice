@@ -9,9 +9,11 @@
             <div class="fast_in">
                 <ul>
                     <li>多爱食提供的更多、更好！</li>
+                    <{if !$ID}>
                     <li><a href="javascript:void(0)" onclick="showLoginPanel()"><span class="f_login">登录</span></a><a href="index.php?mod=user&code=register"><span class="f_login">注册</span></a></li>
+                    <{/if}>
                     <li>快速订餐入口：</li>
-                    <li><input type="text" name="fast" class="in" value="宫保鸡丁"/></li>
+                    <li><input type="text" name="fast" class="in" value="宫保鸡丁" onfocus="javascript:if(this.value=='宫保鸡丁')this.value='';"/></li>
                     <li class="fast_or"><a href="#"><span class="f_wai">快速订餐</span></a></li>
                 </ul>
             </div>
