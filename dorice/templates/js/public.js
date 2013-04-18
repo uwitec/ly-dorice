@@ -55,7 +55,9 @@ function registerSubmit(){
         var MyAjax=$.post("ajax.php?mod=topic&code=register",{name:name,pass:pass2,email:email},function(d){
             //alert(d)
             if(d==0){
-                window.location.href='index.php';
+                $(".listCon:eq(6)").html("<span class='right'>注册成功，3秒钟之后转入首页...</span>");
+                setTimeout("window.location.href='index.php'",3000);
+                //window.location.href='index.php';
             }else{
                 $(".listCon:eq(6)").html("<span class='error'>注册失败</span>");
             }
@@ -130,7 +132,15 @@ function showEmail(val){
         $(".listCon:eq(3)").html("<span class='error'>邮箱格式不正确</span>");
         return false;
     }
-    $(".listCon:eq(3)").html("<span class='right'></span>");
+    var myAjax=$.post("ajax.php?mod=topic&code=showEmail",{email:val},function(d){
+        if(d==1){
+            $(".listCon:eq(3)").html("<span class='right'></span>");
+            return true;
+        }else{
+            $(".listCon:eq(3)").html("<span class='error'>邮箱已被使用</span>");
+            return false;
+        }
+    });
     return true;
 }
 function showCode(val){
@@ -140,6 +150,7 @@ function showCode(val){
         return false;
     }
     var MyAjax=$.post("ajax.php?mod=topic&code=showCode",{code:val},function(d){
+        //alert(d)
         if(d==0){
             $(".listCon:eq(4)").html("<span class='right'></span>");
             return true;
@@ -180,4 +191,23 @@ function showState(t){
         $(".listCon:eq(4)").html("请输入图象中的字符,点击验证码刷新");
     }
 }
-
+function loginSubmit(){
+    var name=$("#username").val().replace(/^\s+|\s+$/g,'');
+    var pass=$("#password").val();
+    if($("#remember").is(":checked")){
+        var auto=1;
+    }else{
+        auto=0;
+    }
+    var myAjax=$.post("ajax.php?mod=topic&code=loginSubmit",{name:name,pass:pass,auto:auto},function(d){
+        //alert(d);
+        if(d==1){
+            //$("#showError").html('登录成功，3秒钟后转入多爱食首页...');
+            //setTimeout("window.location.href='index.php'",3000);
+            window.location.href='index.php';
+        }
+        if(d==0){
+            $("#showError").html('用户名或密码错误');
+        }
+    });
+}
