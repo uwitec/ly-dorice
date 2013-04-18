@@ -13,18 +13,48 @@ function Get($type){
     return $option;
 }
 function Post($type){
-    return $_POST[$type];
+    if(isset($_POST[$type])){
+        $option=$_POST[$type];
+    }else{
+        $option='';
+    }
+    return $option;
 }
-function Session($type,$value){
-    $_SESSION[$type]=$value;
+function Session($type){
+    if(isset($_SESSION[$type])){
+        $option=$_SESSION[$type];
+    }else{
+        $option='';
+    }
+    return $option;
 }
-function GetSession($type){
-    return $_SESSION[$type];
+function Cookie($type){
+    if(isset($_COOKIE[$type])){
+        $option=$_COOKIE[$type];
+    }else{
+        $option='';
+    }
+    return $option;
+}
+function GetID($type){
+    $option=  Session($type);
+    if($option==""){
+        $option=  Cookie($type);
+    }
+    return $option;
 }
 function Query($sql){
     return mysql_query($sql);
 }
 function GetRow($query){
     return mysql_fetch_array($query);
+}
+function member($id){
+    if($id>0){
+        $sql="select * from ly_users where id='{$id}'";
+        $query=  Query($sql);
+        $row=GetRow($query);
+        return $row;
+    }
 }
 ?>
