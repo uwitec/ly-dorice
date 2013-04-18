@@ -15,10 +15,14 @@ and open the template in the editor.
         <div class="head">
             <div class="head_con">
                 <div class="head_le">
-<!--                    <span><b><script>showtime()</script>，<a href="#">James</a>，欢迎来到多爱食！</b></span><span class="space">退出</span>-->
+                    <{if $ID>0}>
+                    <span><b><script>showtime()</script>，<a href="#"><{$member.nickname}></a>，欢迎来到<span class="style1">多爱食</span>！</b></span>
+                    <span class="space">[<a href="index.php?mod=user&code=loginout">退出</a>]</span>
+                    <{else}>
                     <span><b><script>showtime()</script>，欢迎来到<span class="style1">多爱食</span>！</b></span>
-                    <span class="space">[<a href="index.php?mod=user&code=login" target="_blank">登录</a>]</span>
-                    <span class="space">[<a href="index.php?mod=user&code=register" target="_blank">注册</a>]</span>
+                    <span class="space">[<a href="index.php?mod=user&code=login">登录</a>]</span>
+                    <span class="space">[<a href="index.php?mod=user&code=register">注册</a>]</span>
+                    <{/if}>
                 </div>
                 <div class="head_ri">
                     <ul>

@@ -17,18 +17,18 @@
             </li>
             <li>
                 <span>用户名：</span>
-                <span><input type="text" class="nax"/></span>
+                <span><input type="text" class="nax" name="username" id="username"/></span>
             </li>
             <li>
                 <span style="margin-left:14px;">密码：</span>
-                <span><input type="password" class="nax"/></span>
+                <span><input type="password" class="nax" name="password" id="password"/></span>
             </li>
             <li class="mar">
-                <span><input type="checkbox" value="" checked/>记住账号</span>
-                <span style="margin-left:20px;"><input type="checkbox" value="" checked/>自动登录</span>
+                <span><input type="checkbox" value="" checked id="remember"/>记住账号</span>
             </li>
             <li class="mar">
-                <span><input type="button" value="登 录" class="login_submit"/></span>
+                <span><input type="button" value="登 录" class="login_submit" onclick="loginSubmit()"/></span>
+                <span id="showError"></span>
             </li>
         </ul>
     </div>

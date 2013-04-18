@@ -6,10 +6,10 @@
     <div class="loginExt">
         <ul>
             <li class="A1">欢迎登录多爱食</li>
-            <li class="A2">用户名：<input type="text" class="txt"/></li>
-            <li class="A3">密码：<input type="password" class="txt"/></li>
-            <li class="auto"><input type="checkbox" checked/>记住账号<input type="checkbox" checked style="margin-left:15px;"/>自动登录</li>
-            <li class="A4"><input type="button" value="登 录" class="fastLogin"/></li>
+            <li class="A2">用户名：<input type="text" class="txt" id="username"/></li>
+            <li class="A3">密码：<input type="password" class="txt" id="password"/></li>
+            <li class="auto"><input type="checkbox" checked id="remember"/>记住账号</li>
+            <li class="A4"><input type="button" value="登 录" class="fastLogin" onclick="loginSubmit()"/></li>
         </ul>
     </div>
     <div class="loginFast">
