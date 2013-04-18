@@ -9,4 +9,5 @@ $this->db_host='127.0.0.1';
 $this->db_name='dorice';
 $this->db_user='root';
 $this->db_pass='';
+$this->cookie_expire=2592000;//cookie周期30天
 ?>
