@@ -211,3 +211,30 @@ function loginSubmit(){
         }
     });
 }
+function seekPassword(){
+    var uname=$("#Uname").val().replace(/^\s+|\s+$/g,'');
+    var uemail=$("#Uemail").val().replace(/^\s+|\s+$/g,'');
+    if(uname.length==0){
+        $(".listCon:eq(0)").html("<span class='error'>请输入用户名</span>");
+        return false;
+    }else{
+        $(".listCon:eq(0)").html("");
+    }
+    if(uemail.length==0){
+        $(".listCon:eq(1)").html("<span class='error'>请输入注册邮箱地址</span>");
+        return false;
+    }else{
+        $(".listCon:eq(1)").html("");
+    }
+    var myAjax=$.post("ajax.php?mod=topic&code=seekPassword",{uname:uname,uemail:uemail},function(d){
+        alert(d);
+        if(d==2){
+           $(".listCon:eq(2)").html("<span class='error'>用户名或邮箱输入不正确</span>"); 
+           return false;
+        }else{
+            alert('修改新密码');
+            return true;
+        }
+    });
+    return true;
+}
