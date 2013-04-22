@@ -48,14 +48,21 @@ class ModSmarty extends Smarty{
         }
     }
     function member_login(){
-        
+        if($this->ID>0){
+            exit('您已登录');
+        }
         $this->display('topic_login.html');
     }
     function member_register(){
-
+        if($this->ID>0){
+            exit('您已有账号');
+        }
         $this->display('topic_register.html');
     }
     function seek_password(){
+        if($this->ID>0){
+            exit('您已登录');
+        }
         $this->display('topic_seek.html');
     }
     function loginOut(){
