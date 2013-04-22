@@ -1,0 +1,88 @@
+<{include file="topic_header.html"}>
+<div class="nav">多爱食 > 预订 > 北京大饭店预订</div>
+<div class="public">
+    <div id="pub_le">
+        <div class="pub_le">
+            <h1 class="com_bg_2">预订就餐流程</h1>
+            <div class="flow">
+                <ul>
+                    <li>1.收到预订成功短信</li>
+                    <li class="flowNext"></li>
+                    <li>2.前往餐厅就餐</li>
+                    <li class="flowNext"></li>
+                    <li>3.到达餐厅出示短信</li>
+                    <li class="flowNext"></li>
+                    <li>4.结账时获得优惠</li>
+                    <li class="flowNext"></li>
+                    <li>5.获得该餐厅的积分</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="pub_ri">
+        <div class="pub_ri">
+            <div class="indent">
+                <h1>订单信息</h1>
+                <div class="shop">
+                    <p class="pt"><span class="sp1">燕和楼酒店</span>，成功预订享<span class="style1">8.8</span>折优惠</p>
+                    <p><span>特色</span>：环境优雅，物美价廉，美食天堂</p>
+                    <p><span>最新活动</span>：酒水免费，消费满500元，折上再折</p>
+                    <p><span>推荐菜</span>：炭烧鲈鱼，布衣神仙鸡</p>
+                </div>
+                <div class="orderMess">
+                    <table>
+                        <tr>
+                            <td class="td">就餐时间</td>
+                            <td class="td1">
+                                <script type="text/javascript" src="templates/js/date/WdatePicker.js"></script>
+                                <input type="text" value="" onfocus="this.blur()" onclick="WdatePicker({minDate:'%y-%M-%d'})"/>
+                                <input type="text" value="" onfocus="this.blur()"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td">就餐人数</td>
+                            <td class="td1">
+                                <input type="text" value="就餐人数" onfocus="this.blur()"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td"></td>
+                            <td class="td1">
+                                <input type="radio" name="type" checked class="singleCheck"/>大厅优先
+                                <input type="radio" name="type" class="singleCheck"/>包间优先
+                                <input type="radio" name="type" class="singleCheck"/>无要求
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td">联系人</td>
+                            <td class="td1">
+                                <input type="text" value="请输入联系人"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td"></td>
+                            <td class="td1">
+                                <input type="radio" name="sex" checked class="singleCheck"/>先生
+                                <input type="radio" name="sex" class="singleCheck"/>女士 
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td">手机号</td>
+                            <td class="td1">
+                                <input type="text" value="请输入手机号"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td"></td>
+                            <td class="td1">
+                                <input type="button" value="提交订单" class="submitOrder"/>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="clear"></div>
+</div>
+<{include file="topic_footer.html"}>
