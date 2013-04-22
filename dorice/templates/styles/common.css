@@ -105,13 +105,9 @@ h1 span.more{position: absolute;top:0;right:10px;font-size: 13px;color:#333;font
 .fast_in li a{float:left;margin-right: 15px;}
 .fast_in .in{padding-left: 3px;height:25px;line-height: 25px;*height:30px;*margin-left:-4px;border:2px solid #ccc;font-size: 14px;width:200px;color:#666;}
 .fast_in li span.f_login{margin-top:5px;width:61px;height:20px;line-height: 20px;text-align: center;display: block;background: url(../images/public/80.gif) center center no-repeat;cursor: pointer;}
-.fast_in li span.f_wai{font-family: 'Microsoft YaHei';font-size: 14px;font-weight: bold;width: 108px;height:31px;line-height: 31px;text-align: center;display: block;background: url(../images/public/119.gif) center center no-repeat;cursor: pointer;}
+.fast_in li span.f_wai{color:#fff;font-family: 'Microsoft YaHei';font-size: 14px;font-weight: bold;width: 108px;height:31px;line-height: 31px;text-align: center;display: block;background: url(../images/public/119.gif) center center no-repeat;cursor: pointer;}
 .fast_or{margin-top: 10px;margin-bottom: 5px;}
 .fast_in a:hover{text-decoration: none;}
-.fast_or a:link{color:#fff;}
-.fast_or a:visited{color:#fff;}
-.fast_or a:hover{color:#fff;}
-.fast_or a:active{color:#fff;}
 
 .rank_sort{border-top:1px solid #ccc;}
 .rank_sort li{height:30px;line-height: 30px;width:124.5px;border-left: 1px solid #ccc;border-bottom: 1px solid #ccc;cursor: pointer;}
@@ -577,3 +573,35 @@ h1 span.more{position: absolute;top:0;right:10px;font-size: 13px;color:#333;font
 #showLoginCon .loginFoot a:hover{color:#3DA5FD;}
 #showLoginCon .loginFoot a:active{color:#3DA5FD;}
 #showError{color:#ff0000;}
+
+.order_con{padding: 5px 10px;text-align: left;}
+.order_con .nwx{margin: 10px auto;position: relative;}
+.order_con .border{border-top:2px dashed #ccc;}
+.order_con .nwx li{height:35px;line-height: 35px;padding-left: 35px;float: none;margin-top: 20px;width:220px;}
+.order_con .nwx li.place{background: url(../images/public/order_1.gif) left center no-repeat;}
+.order_con .nwx li.date{background: url(../images/public/order_2.gif) left center no-repeat;}
+.order_con .nwx li.time{background: url(../images/public/order_3.gif) left center no-repeat;}
+.order_con .nwx li.num{background: url(../images/public/order_4.gif) left center no-repeat;}
+.order_con .nwx li span.select{width:200px;height:20px;line-height: 20px;border:1px solid #ccc;background: url(../images/public/17.gif) right center no-repeat;display: block;float: right;padding-left: 5px;cursor: pointer;}
+.order_con .sure{position: absolute;top:20px;right:10px;width:340px;}
+.order_con input.b1{cursor: pointer;text-align: center;margin-left:32px;border:none;width:79px;height:30px;*height:31px;line-height: 30px;font-family: 'Microsoft YaHei';font-weight: bold;font-size: 14px;color:#fff;background: url(../images/public/11.gif) center center no-repeat;}
+
+.flow{margin:0 0 0 15px;}
+.flow li{filter: progid:DXImageTransform.Microsoft.Gradient(gradientType=1,startColorStr=#E5F2F9,endColorStr=#F9FCFD);
+    background-image:-moz-linear-gradient(left, #E5F2F9, #F9FCFD);height: 52px;line-height: 52px;float:none;clear:both;margin:10px 0;text-align: left;padding-left:30px;font-weight: bold;color:#666;}
+.flow li.flowNext{filter:none;background-image: none;background:url(../images/public/next.png) 85px center no-repeat;height: 40px;line-height: 40px;*height: 38px;*line-height: 38px;}
+.indent{margin:10px 20px;}
+.indent h1{border-bottom: 1px solid #ccc;}
+.shop{text-align: left;padding:15px 0;border-bottom: 1px dotted #ccc;}
+.shop p{line-height: 25px;padding-left: 10px;}
+.shop p.pt{line-height: 50px;}
+.shop p span{font-weight: bold;}
+.shop p span.sp1{font-size: 18px;color:#D80E3C;font-family: 'Microsoft YaHei';}
+.orderMess{padding: 15px 0;width:660px;}
+.orderMess table{width:100%;font-size: 14px;}
+.orderMess tr{line-height: 40px;}
+.orderMess td.td{width:12%;text-align: right;}
+.orderMess td.td1{text-align: left;padding-left: 15px;width:88%;}
+.orderMess input{height:30px;line-height: 30px;margin-right: 15px;font-size: 14px;color:#999;vertical-align: middle;*height:35px;line-height:35px;}
+.orderMess input.singleCheck{vertical-align: -11px;*vertical-align:-9px;margin-right:5px;}
+.orderMess input.submitOrder{border:none;color:#fff;font-family: 'Microsoft YaHei';font-size: 14px;font-weight: bold;width: 108px;height:32px;line-height: 32px;text-align: center;background: url(../images/public/119.gif) center center no-repeat;cursor: pointer;*margin-top:10px;}
