@@ -27,7 +27,9 @@ class ModSmarty extends Smarty{
     }
     function Execute(){
         switch ($this->code){
-    
+            case 'submit':
+                $this->submitForm();
+                break;
             default :
                 $this->main();
                 break;
@@ -36,7 +38,9 @@ class ModSmarty extends Smarty{
     function main(){
         $this->display('topic_order_index.html');
     }
-    
+    function submitForm(){
+        $this->display('topic_submit.html');
+    }
 }
 
 ?>
