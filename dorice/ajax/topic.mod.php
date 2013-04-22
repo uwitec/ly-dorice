@@ -11,8 +11,11 @@ if(!defined('SMARTY'))
 class ModSmarty extends Smarty{
     var $code;
     var $mod;
+    var $ID;
     function ModSmarty($mod,$code){
         $this->config();
+        $id=  GetID('id');
+        $this->ID=$id;
         $this->code=$code;
         $this->mod=$mod;
         $this->assign('mod', $this->mod);
@@ -39,6 +42,9 @@ class ModSmarty extends Smarty{
             case 'loginSubmit':
                 $this->member_login();
                 break;
+            case 'seekPassword':
+                $this->seekPassword();
+                break;
             default :
                 $this->main();
                 break;
@@ -47,7 +53,10 @@ class ModSmarty extends Smarty{
     function main(){
         exit;
     }
-    function showLoginPanel(){    
+    function showLoginPanel(){
+        if($this->ID>0){
+            exit('您已登录');
+        }
         $this->display('topic_show_login.html');
     }
     function showName(){
@@ -84,6 +93,9 @@ class ModSmarty extends Smarty{
         }
     }
     function member_register(){
+        if($this->ID>0){
+            exit('您已有账号');
+        }
         $name=Post('name');
         $pass=md5(Post('pass'));
         $email=Post('email');
@@ -108,6 +120,9 @@ class ModSmarty extends Smarty{
         }
     }
     function member_login(){
+        if($this->ID>0){
+            exit('您已登录');
+        }
         $name=Post('name');
         $pass=md5(Post('pass'));
         $auto=Post('auto');
@@ -133,6 +148,28 @@ class ModSmarty extends Smarty{
             }
         }else{
             echo '0';
+        }
+    }
+    function seekPassword(){
+        if($this->ID>0){
+            exit('您已登录');
+        }
+        $name=Post('uname');
+        $email=Post('uemail');
+        $sql="select * from ly_users where username='{$name}' and email='{$email}'";
+        $query=  Query($sql);
+        $row=GetRow($query);
+        if($row){
+            $seek=  randstr(5);
+            $_SESSION['seek']=$seek;
+            $subject="多爱食密码找回邮件";
+            $message="您的验证码：".$seek."。输入验证码即可设置新密码。请勿回复此邮件。";
+            $return=mail($email, $subject, $message);
+            if($return==true){
+                echo '1';
+            }
+        }else{
+            echo '2';
         }
     }
 }
