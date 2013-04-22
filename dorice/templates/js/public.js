@@ -238,3 +238,7 @@ function seekPassword(){
     });
     return true;
 }
+function fastOrder(){
+    var val=$("#fastOrder").val().replace(/^\s+|\s+$/g,'');
+    window.location.href='index.php?mod=topic&code=search&key='+val;
+}
